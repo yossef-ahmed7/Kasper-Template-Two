@@ -29,38 +29,39 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#protfolio">Protfolio</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#our-skills">our-skills</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="search">
+                    <input type="text" placeholder="Search..." />
                     <i class="fas fa-search"></i>
                 </div>
             </div>
         </div>
     </div>
-    <div class="landing">
+    <div class="landing" id="home">
         <div class="overlay"></div>
+
         <div class="text">
             <div class="content">
                 <h2>Hello World! <br> We Are Kasper We Make Art.</h2>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
-                    eget
-                    tincidunt
-                    nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris
-                    blandit
-                    aliquet
-                    elit, eget tincidunt.</p>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                </p>
             </div>
         </div>
+
         <i class="fas fa-angle-left left fa-2x"></i>
         <i class="fas fa-angle-right right fa-2x"></i>
+
         <ul class="ball">
-            <li></li>
             <li class="active"></li>
             <li></li>
         </ul>
     </div>
-    <div class="services">
+    <div class="services" id= "services">
         <div class="container">
             <div class="spesial-heading">
                 <h2>Services</h2>
@@ -118,7 +119,7 @@
             </ul>
         </div>
     </div>
-    <div class="Protfolio">
+    <div class="Protfolio" id= "protfolio">
         <div class="container">
             <div class="spesial-heading">
                 <h2>Protfolio</h2>
@@ -136,56 +137,56 @@
         </div>
         <div class="image-container">
             <div class="box">
-                <img src="img/shuffle-01.jpg" alt="">
+                <img src="img/shuffle-01.jpg" data-category="Photo">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-02.jpg" alt="">
+                <img src="img/shuffle-02.jpg" data-category="Abb">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-03.jpg" alt="">
+                <img src="img/shuffle-03.jpg" data-category="Web">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-04.jpg" alt="">
+                <img src="img/shuffle-04.jpg" data-category="Web">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-05.jpg" alt="">
+                <img src="img/shuffle-05.jpg" data-category="Print">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-06.jpg" alt="">
+                <img src="img/shuffle-06.jpg" data-category="Abb">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-07.jpg" alt="">
+                <img src="img/shuffle-07.jpg" data-category="Photo">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
             <div class="box">
-                <img src="img/shuffle-08.jpg" alt="">
+                <img src="img/shuffle-08.jpg" data-category="Print">
                 <div class="caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
@@ -204,7 +205,7 @@
             <button>See More</button>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="spesial-heading">
                 <h2>About Us</h2>
@@ -218,27 +219,27 @@
         <div class="container">
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="number">1.236</div>
+                <span class="number" data-number="1236">0</span>
                 <p>Coffee Drinks</p>
             </div>
             <div class="box">
                 <i class="far fa-folder"></i>
-                <div class="number">256</div>
+                <span class="number" data-number="256">0</span>
                 <p>Completed Projects</p>
             </div>
             <div class="box">
                 <i class="far fa-envelope"></i>
-                <div class="number">1,743</div>
+                <span class="number" data-number="1743">0</span>
                 <p>Mail Sent</p>
             </div>
             <div class="box">
                 <i class="fas fa-trophy"></i>
-                <div class="number">17</div>
+                <span class="number" data-number="17">0</span>
                 <p>Awards Received</p>
             </div>
         </div>
     </div>
-    <div class="our-skills">
+    <div class="our-skills" id="our-skills">
         <div class="container">
             <div class="Testimonials">
                 <h3>Testimonials</h3>
@@ -273,25 +274,25 @@
                 <div class="holder">
                     <h4>Adobe</h4>
                     <div class="hold">
-                        <span style="width: 90%;" progress="90%"></span>
+                        <span style="width: 0" progress="90%" data-width="90%" ></span>
                     </div>
                 </div>
                 <div class="holder">
                     <h4>Html & Css</h4>
                     <div class="hold">
-                        <span style="width: 75%;" progress="75%"></span>
+                        <span style="width: 0" progress="75%" data-width="75%" ></span>
                     </div>
                 </div>
                 <div class="holder">
                     <h4>JavaScript</h4>
                     <div class="hold">
-                        <span style="width: 80%;" progress="80%"></span>
+                        <span style="width: 0" progress="80%" data-width="80%" ></span>
                     </div>
                 </div>
                 <div class="holder">
                     <h4>Php</h4>
                     <div class="hold">
-                        <span style="width: 65%;" progress="65%"></span>
+                        <span style="width: 0" progress="65%" data-width="65%" ></span>
                     </div>
                 </div>
             </div>
@@ -303,7 +304,7 @@
             <span>John Doe</span>
         </div>
     </div>
-    <div class="Pricing">
+    <div class="Pricing" id="pricing">
         <div class="container">
             <div class="spesial-heading">
                 <h2>Pricing</h2>
@@ -390,7 +391,7 @@
                 tincidunt.</p>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="spesial-heading">
                 <h2>Contact Us</h2>
@@ -429,6 +430,7 @@
             <p class="copyright">&copy; 2021 <span>Kasper</span> All Right Reserved</p>
         </div>
     </div>
+    <script src="master.js"></script>
 </body>
 
 </html>

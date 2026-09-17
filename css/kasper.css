@@ -187,6 +187,28 @@ body {
     position: relative;
     margin-left: 30px;
     border-left: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+}
+
+.search input.show {
+    position: absolute;
+    left: 20px;
+    width: 120px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
 .header .nav .search i {
@@ -203,6 +225,7 @@ body {
     background-image: url(../img/landing.jpg);
     background-size: cover;
     position: relative;
+    transition: 0.5s;
 }
 
 .landing .overlay {
@@ -211,7 +234,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0 0 0 / 0.5);
+    background-color: rgba(0 0 0 / 0.7);
 }
 
 .landing .text {
@@ -263,10 +286,12 @@ body {
 
 .landing .left {
     left: 30px;
+    cursor: pointer;
 }
 
 .landing .right {
     right: 30px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -425,6 +450,7 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+    cursor: pointer;
 }
 
 .Protfolio .choise li {
@@ -432,10 +458,11 @@ body {
     margin: 2px;
 }
 
-.Protfolio .choise li:hover,
 .Protfolio .choise .active {
     background-color: var(--main-color);
     color: white;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .Protfolio .image-container {
@@ -730,8 +757,10 @@ body {
 .our-skills .skills .hold span {
     display: block;
     height: 100%;
+    width: 0;
     background-color: var(--main-color);
     position: relative;
+    transition: width 1s;
 }
 
 .our-skills .skills .hold span::after {
